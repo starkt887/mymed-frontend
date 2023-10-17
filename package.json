@@ -1,0 +1,49 @@
+{
+  "name": "med",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/lab": "^5.0.0-alpha.147",
+    "@mui/material": "^5.14.12",
+    "@mui/x-date-pickers": "^5.0.20",
+    "@reduxjs/toolkit": "^1.9.2",
+    "@web3modal/ethereum": "^2.3.6",
+    "@web3modal/react": "^2.3.6",
+    "agora-chat": "^1.1.0",
+    "agora-react-uikit": "^1.2.0",
+    "axios": "^1.3.2",
+    "cashfree-dropjs": "^1.1.5",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.7",
+    "ethers": "^5.7.2",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-hotkeys-hook": "^4.4.0",
+    "react-qr-code": "^2.0.11",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.8.1",
+    "react-share": "^4.4.1",
+    "recharts": "^2.7.2",
+    "redux-persist": "^6.0.0",
+    "redux-persist-transform-encrypt": "^4.0.0",
+    "wagmi": "^0.12.12"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "vite": "^4.1.0"
+  }
+}
