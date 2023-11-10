@@ -52,6 +52,7 @@ function Profile() {
   const { completion, progress } = profileChecker(user);
 
   useEffect(() => {
+    console.log(user);
     setProfile(user);
   }, []);
 

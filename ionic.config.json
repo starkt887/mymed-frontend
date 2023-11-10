@@ -1,0 +1,7 @@
+{
+    "name": "Med Repertory",
+    "integrations": {
+      "capacitor": {}
+    },
+    "type": "react"
+  }

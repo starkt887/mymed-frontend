@@ -78,7 +78,7 @@ function Preview({ prescription, locationData }) {
       <div >
         <Box>
           {/*Heading */}
-          <Box sx={{ position: "absolute", px: 2, py: 2 }}>
+          <Box sx={{ position: "absolute", px: 2, py: {xs:8,sm:2} }}>
             <img
               src={prescriptionlogo}
             />
@@ -94,7 +94,7 @@ function Preview({ prescription, locationData }) {
                 background: "#4328be",
                 color: "white",
                 py: 6,
-                px: 5,
+                px: 6,
                 width: "35%",
                 borderBottomLeftRadius: "100px",
                 position: "absolute",
@@ -104,7 +104,8 @@ function Preview({ prescription, locationData }) {
           </Box>
           <Box
             sx={{
-              display: "flex",
+              // display:{xs:"none",sm:"flex"},
+              display:"flex",
               justifyContent: "end",
             }}
           >
@@ -113,8 +114,8 @@ function Preview({ prescription, locationData }) {
                 background: "#4328be",
                 color: "white",
                 py: 3,
-                px: 5,
-                width: "50%",
+                px: 3,
+            
                 borderBottomLeftRadius: "100px",
                 zIndex: "1",
               }}
@@ -138,7 +139,7 @@ function Preview({ prescription, locationData }) {
           >
             <Box
               sx={{
-                py: 2,
+                py: 5,
                 px: 5,
                 textAlign: "right",
               }}
