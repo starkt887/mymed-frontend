@@ -33,6 +33,7 @@ function Preview({ prescription, locationData }) {
     blood_group: "",
     gender: "",
     address: "",
+    date: ""
   });
   const [qrCodeData, setQrCodeData] = useState("");
 
@@ -54,7 +55,9 @@ function Preview({ prescription, locationData }) {
       blood_group: locationData.user?.blood_group || user.blood_group,
       gender: locationData.user?.gender || user.gender,
       address: locationData.user?.address || user.address,
+      date: locationData.createdAt
     });
+
   };
 
   const _QR = () => {
@@ -78,7 +81,7 @@ function Preview({ prescription, locationData }) {
       <div >
         <Box>
           {/*Heading */}
-          <Box sx={{ position: "absolute", px: 2, py: 2 }}>
+          <Box sx={{ position: "absolute", px: 2, py: { xs: 8, sm: 2 } }}>
             <img
               src={prescriptionlogo}
             />
@@ -94,7 +97,7 @@ function Preview({ prescription, locationData }) {
                 background: "#4328be",
                 color: "white",
                 py: 6,
-                px: 5,
+                px: 6,
                 width: "35%",
                 borderBottomLeftRadius: "100px",
                 position: "absolute",
@@ -104,6 +107,7 @@ function Preview({ prescription, locationData }) {
           </Box>
           <Box
             sx={{
+              // display:{xs:"none",sm:"flex"},
               display: "flex",
               justifyContent: "end",
             }}
@@ -113,8 +117,8 @@ function Preview({ prescription, locationData }) {
                 background: "#4328be",
                 color: "white",
                 py: 3,
-                px: 5,
-                width: "50%",
+                px: 3,
+
                 borderBottomLeftRadius: "100px",
                 zIndex: "1",
               }}
@@ -138,7 +142,7 @@ function Preview({ prescription, locationData }) {
           >
             <Box
               sx={{
-                py: 2,
+                py: 5,
                 px: 5,
                 textAlign: "right",
               }}
@@ -231,7 +235,7 @@ function Preview({ prescription, locationData }) {
                     Date:
                   </Typography>
                   <Typography gutterBottom sx={{}}>
-                    {new Date().toDateString()}
+                    {new Date(patient.date).toDateString()}
                   </Typography>
                 </Box>
                 <Box
@@ -486,7 +490,7 @@ function Preview({ prescription, locationData }) {
               <Box>
                 <Grid container rowSpacing={1} columnSpacing={{ sm: 0, md: 0 }}>
                   <Grid item xs={12} sm={6} md={6} >
-                    <PhoneAndroidIcon />
+                    {/* <PhoneAndroidIcon /> */}
                     <Typography
                       sx={{
                         color: "#fff",
@@ -496,7 +500,7 @@ function Preview({ prescription, locationData }) {
                       }}
                       variant="p"
                     >
-                      {doctor.mobile}
+                      {/* {doctor.mobile} */}
                     </Typography>
                   </Grid>
                   <Grid item xs={12} sm={6} md={6} >

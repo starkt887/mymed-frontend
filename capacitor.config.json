@@ -1,0 +1,8 @@
+{
+    "appId": "io.ionic.medrepertory",
+    "appName": "Med Repertory",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "dist",
+    "cordova": {}
+  }

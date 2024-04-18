@@ -173,12 +173,12 @@ export default function Navbar({ toggleDrawer, auth }) {
           >
             MED
           </Typography> */}
-          <img
+          {/* <img
             src={weblogo}
             alt="Logo"
             height={60}
             onClick={() => navigate(auth ? "dashboard" : "/")}
-          />
+          /> */}
           <Typography
             variant="p"
             noWrap

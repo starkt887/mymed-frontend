@@ -49,6 +49,7 @@ const PreviewPrescription = lazy(() =>
 const Notifications = lazy(() =>
   import("../pages/Notifications/Notifications")
 );
+const CampOnBoard = lazy(() => import("../pages/CampOnboard/CampOnBoard"))
 import ViewDocument from "../pages/ViewDocument/ViewDocument";
 
 // Icons
@@ -174,6 +175,14 @@ const useRoute = () => {
       path: "/patient/:id",
       auth: true,
       exclude: true,
+    },
+    {
+      name: "Camp Onboard",
+      Component: CampOnBoard,
+      path: "/camp-onboard",
+      Icon: EventNoteIcon,
+      auth: true,
+      exclude: false,
     },
     {
       name: "Video Chat",

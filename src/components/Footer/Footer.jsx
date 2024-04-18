@@ -14,7 +14,7 @@ function Footer() {
         <Grid container spacing={4}>
           <Grid item xs={12} md={3}>
             <Typography variant="h6" component="h2" gutterBottom>
-              <img src={weblogo} />
+              {/* <img src={weblogo} /> */}
             </Typography>
             <Typography
               variant="body1"

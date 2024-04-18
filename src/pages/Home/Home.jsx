@@ -31,12 +31,14 @@ const Home = () => {
       {/* Hero section */}
       <Grid container className={classes.heroContainer}>
         <Grid item xs={12} sm={6}>
-          <Typography variant="h1" className={classes.heroTitle}>
+          <Typography variant="p" className={classes.heroTitle}>
             Med Repertory
           </Typography>
-          <Typography variant="h4" className={classes.heroSubtitle}>
+          <br />
+          <Typography variant="p" className={classes.heroSubtitle}>
             The easiest way to see a doctor online
           </Typography>
+          <br />
           <Button
             variant="contained"
             color="primary"
@@ -151,7 +153,7 @@ const Home = () => {
       </Grid>
 
       {/* Features section */}
-      <Container sx={{ textAlign: "center" }}>
+      {/* <Container sx={{ textAlign: "center" }}>
         <Typography variant="h2" gutterBottom>
           Features
         </Typography>
@@ -260,7 +262,7 @@ const Home = () => {
             <img src={areyouadoctor} alt="Doctor" className={classes.image} />
           </Grid>
         </Grid>
-      </div>
+      </div> */}
     </Grid>
   );
 };
