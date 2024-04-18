@@ -17,15 +17,16 @@ function CampOnBoard() {
 
 
     //aadhar kyc full name, Aadhaar number, date of birth, gender, country, address, pincode, profile image, and reference IDs
-    const [Profile, setProfile] = useState({name:"Furkan Malik",mobile:"9857467590",
-    gender:"Male",
-    dob:"01/01/2002",
-    age:"21",
-    address:"T-866-67, Faiz Road, Karol Bagh",
-    city:"Delhi",
-    country:"India",
-    state:"Delhi"
-})
+    const [Profile, setProfile] = useState({
+        name: "Furkan Malik", mobile: "9857467590",
+        gender: "Male",
+        dob: "01/01/2002",
+        age: "21",
+        address: "T-866-67, Faiz Road, Karol Bagh",
+        city: "Delhi",
+        country: "India",
+        state: "Delhi"
+    })
     const [document, setDocument] = useState(null);
     const [documentFile, setDocumentFile] = useState(null);
     const [fileError, setFileError] = useState("");
@@ -67,6 +68,16 @@ function CampOnBoard() {
         setProfile(data);
 
     };
+
+    const startScanner = async () => {
+        const result = await BureauAadhaarQRSDK.startScan();
+        if (result) {
+            alert(result.content); // The QR content will come out here
+            // Handle the data as your heart desires here
+        } else {
+            alert('NO DATA FOUND!');
+        }
+    }
 
     //to be done after confirmation
     const handleProfilePic = async (e) => {

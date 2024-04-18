@@ -20,6 +20,7 @@ function PreviewPrescription() {
       const locationState = location.state;
       setLocationData(locationState);
       setPrescription(locationState.prescription);
+     
     } else {
       navigate("/prescription");
     }
