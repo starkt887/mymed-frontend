@@ -19,3 +19,12 @@ Vercel Link: https://mymed-frontend.vercel.app/
 patient test creds: vardhan@gmail.com vardhan@123
 doctor test creds: stephen@gmail.com stephen@123
 ```
+Vercel Link:
+https://mymed-frontend.vercel.app/
+patient test creds:
+vardhan@gmail.com
+vardhan@123
+
+doctor test creds:
+stephen@gmail.com
+stephen@123
